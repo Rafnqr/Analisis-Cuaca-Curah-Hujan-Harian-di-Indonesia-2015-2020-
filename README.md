@@ -1,34 +1,60 @@
 # 🌦️ Analisis Cuaca & Curah Hujan Harian di Indonesia (2015–2020)
 
-Proyek ini bertujuan untuk menganalisis data iklim harian di Indonesia dari tahun 2015 hingga 2020.  
-Melalui pendekatan statistik dan machine learning, proyek ini mengeksplorasi hubungan antara suhu, curah hujan, kelembapan, dan variabel iklim lainnya.  
-Model regresi linear dibangun untuk memprediksi suhu harian, sementara metode clustering digunakan untuk mengelompokkan hari-hari berdasarkan kondisi cuaca.
+Proyek ini merupakan implementasi analisis data iklim harian di Indonesia dari tahun 2015 hingga 2020.  
+Data diolah untuk memahami tren suhu dan curah hujan, kemudian digunakan dalam model machine learning untuk melakukan prediksi dan segmentasi cuaca.  
+Seluruh hasil ditampilkan secara interaktif melalui dashboard berbasis **Streamlit**.
+
+---
 
 ## 🎯 Tujuan Proyek
-- Menjelaskan pola dan tren curah hujan & suhu di Indonesia
-- Mengidentifikasi variabel cuaca yang paling mempengaruhi terjadinya hujan
-- Melakukan segmentasi hari berdasarkan suhu dan kelembapan menggunakan K-Means Clustering
-- Memprediksi suhu rata-rata harian menggunakan regresi linear
 
-## 🧰 Tools & Teknologi
-- Python, Pandas, Numpy
+- Menganalisis pola musiman suhu dan curah hujan
+- Mengelompokkan hari berdasarkan kondisi cuaca dengan **K-Means Clustering**
+- Memprediksi suhu rata-rata harian menggunakan **regresi linear**
+- Menyajikan hasil secara interaktif menggunakan **dashboard Python**
+
+---
+
+## 📁 Struktur Proyek
+
+| File / Folder | Deskripsi |
+|---------------|-----------|
+| `FP-BDPA-FINAL.ipynb` | Notebook utama untuk EDA, modeling, dan visualisasi |
+| `app.py` | Dashboard interaktif dengan Streamlit |
+| `climate_data.csv` | Dataset mentah utama (besar) |
+| `climate_day_2015_2020.csv` | Dataset hasil preprocessing |
+| `requirements.txt` | Daftar library Python yang dibutuhkan |
+| `README.md` | Dokumentasi proyek ini |
+
+---
+
+## ⚙️ Teknologi & Library
+
+- Python 3.x
+- Pandas, NumPy
 - Matplotlib, Seaborn
-- Scikit-learn (Linear Regression, K-Means)
-- Jupyter Notebook
+- scikit-learn
+- Streamlit
 
-## 📈 Hasil Utama
-- Visualisasi lengkap tren iklim dan output model
-- Klasterisasi hari menjadi 3 segmen berdasarkan suhu & kelembapan
-- Akurasi model regresi: **R² ≈ 0.95**, **MSE ≈ 0.012**
+---
 
-## 📂 Isi Repository
-- `notebooks/`: Notebook Jupyter untuk EDA, modeling, dan visualisasi
-- `data/`: Dataset mentah & hasil preprocessing
-- `results/`: Grafik dan dokumentasi hasil akhir
-- `README.md`: Dokumentasi lengkap proyek
+## ▶️ Cara Menjalankan Proyek
 
-## 👤 Kontributor
-**Nama:** _[Nama Kamu]_  
-**Instansi:** _[Nama Kampus]_  
-**Email:** _[email@example.com]_
+Untuk menjalankan proyek ini di komputer lokal kamu, ikuti langkah-langkah berikut:
+
+1. Clone repository  
+   Jalankan perintah:  
+   `git clone https://github.com/username/Analisis-Cuaca-Curah-Hujan-Harian-di-Indonesia-2015-2020.git`  
+   `cd Analisis-Cuaca-Curah-Hujan-Harian-di-Indonesia-2015-2020`
+
+2. Install dependencies  
+   Pastikan Python versi 3.7 atau lebih baru telah terpasang.  
+   Install library yang dibutuhkan dengan perintah:  
+   `pip install -r requirements.txt`  
+   Jika belum memiliki Streamlit:  
+   `pip install streamlit`
+
+3. Jalankan Dashboard Streamlit  
+   Jalankan perintah:  
+   `streamlit run app.py`
 
