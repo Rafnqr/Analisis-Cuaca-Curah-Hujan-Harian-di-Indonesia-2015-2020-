@@ -21,9 +21,8 @@ Seluruh hasil ditampilkan secara interaktif melalui dashboard berbasis **Streaml
 |---------------|-----------|
 | `FP-BDPA-FINAL.ipynb` | Notebook utama untuk EDA, modeling, dan visualisasi |
 | `app.py` | Dashboard interaktif dengan Streamlit |
-| `climate_data.csv` | Dataset mentah utama (besar) |
+| `Indonesia daily climate data from 2010 to 2022 dataset` | Dataset mentah utama (besar) |
 | `climate_day_2015_2020.csv` | Dataset hasil preprocessing |
-| `requirements.txt` | Daftar library Python yang dibutuhkan |
 | `README.md` | Dokumentasi proyek ini |
 
 ---
